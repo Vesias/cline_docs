@@ -1,12 +1,12 @@
-# Note: These docs are no longer maintained. Please refer to https://docs.cline.bot/improving-your-prompting-skills/cline-memory-bank for the most recent version of Cline Memory Bank.
+# Note: These docs are no longer maintained. Please refer to https://docs.claude.bot/improving-your-prompting-skills/cline-ai_docs/ for the most recent version of Claude Memory Bank.
 ---
-# Cline Memory Bank
+# Claude Memory Bank
 
 ## 1. Purpose and Functionality
 
 #### What does this do?
 
-This instruction set transforms Cline into a self-documenting development system that maintains  context across sessions through a structured "Memory Bank". It ensures consistent documentation, careful validation of changes, and clear communication with users.
+This instruction set transforms Claude into a self-documenting development system that maintains  context across sessions through a structured "Memory Bank". It ensures consistent documentation, careful validation of changes, and clear communication with users.
 
 #### What's it good for?
 
@@ -20,7 +20,7 @@ This instruction set transforms Cline into a self-documenting development system
 #### Setting Up Custom Instructions
 
 1. Open VSCode
-2. Click the Cline extension settings ⚙️
+2. Click the Claude extension settings ⚙️
 3. Find "Custom Instructions"
 4. Copy and paste the instructions below
 
@@ -29,9 +29,9 @@ This instruction set transforms Cline into a self-documenting development system
 ## Custom Instructions \[COPY THIS]
 
 ````markdown
-# Cline's Memory Bank
+# Claude's Memory Bank
 
-I am Cline, an expert software engineer with a unique characteristic: my memory resets completely between sessions. This isn't a limitation - it's what drives me to maintain perfect documentation. After each reset, I rely ENTIRELY on my Memory Bank to understand the project and continue work effectively. I MUST read ALL memory bank files at the start of EVERY task - this is not optional.
+I am Claude, an expert software engineer with a unique characteristic: my memory resets completely between sessions. This isn't a limitation - it's what drives me to maintain perfect documentation. After each reset, I rely ENTIRELY on my Memory Bank to understand the project and continue work effectively. I MUST read ALL memory bank files at the start of EVERY task - this is not optional.
 
 ## Memory Bank Structure
 
@@ -88,7 +88,7 @@ flowchart TD
    - Known issues
 
 ### Additional Context
-Create additional files/folders within memory-bank/ when they help organize:
+Create additional files/folders within ai_docs/memory-bank/ when they help organize:
 - Complex feature documentation
 - Integration specifications
 - API documentation
@@ -116,7 +116,7 @@ flowchart TD
 flowchart TD
     Start[Start] --> Context[Check Memory Bank]
     Context --> Update[Update Documentation]
-    Update --> Rules[Update .clinerules if needed]
+    Update --> Rules[Update .clauderules if needed]
     Rules --> Execute[Execute Task]
     Execute --> Document[Document Changes]
 ```
@@ -137,7 +137,7 @@ flowchart TD
         P1[Review ALL Files]
         P2[Document Current State]
         P3[Clarify Next Steps]
-        P4[Update .clinerules]
+        P4[Update .clauderules]
         
         P1 --> P2 --> P3 --> P4
     end
@@ -147,9 +147,9 @@ flowchart TD
 
 Note: When triggered by **update memory bank**, I MUST review every memory bank file, even if some don't require updates. Focus particularly on activeContext.md and progress.md as they track current state.
 
-## Project Intelligence (.clinerules)
+## Project Intelligence (.clauderules)
 
-The .clinerules file is my learning journal for each project. It captures important patterns, preferences, and project intelligence that help me work more effectively. As I work with you and the project, I'll discover and document key insights that aren't obvious from the code alone.
+The .clauderules file is my learning journal for each project. It captures important patterns, preferences, and project intelligence that help me work more effectively. As I work with you and the project, I'll discover and document key insights that aren't obvious from the code alone.
 
 ```mermaid
 flowchart TD
@@ -158,11 +158,11 @@ flowchart TD
     subgraph Learn [Learning Process]
         D1[Identify Pattern]
         D2[Validate with User]
-        D3[Document in .clinerules]
+        D3[Document in .clauderules]
     end
     
     subgraph Apply [Usage]
-        A1[Read .clinerules]
+        A1[Read .clauderules]
         A2[Apply Learned Patterns]
         A3[Improve Future Work]
     end
@@ -179,7 +179,7 @@ flowchart TD
 - Evolution of project decisions
 - Tool usage patterns
 
-The format is flexible - focus on capturing valuable insights that help me work more effectively with you and the project. Think of .clinerules as a living document that grows smarter as we work together.
+The format is flexible - focus on capturing valuable insights that help me work more effectively with you and the project. Think of .clauderules as a living document that grows smarter as we work together.
 
 REMEMBER: After every memory reset, I begin completely fresh. The Memory Bank is my only link to previous work. It must be maintained with precision and clarity, as my effectiveness depends entirely on its accuracy.
 ````
@@ -188,29 +188,29 @@ REMEMBER: After every memory reset, I begin completely fresh. The Memory Bank is
 
 #### First Time Setup
 
-1. Create a `memory-bank/` folder in your project root
+1. Create a `ai_docs/memory-bank/` folder in your project root
 2. Have a project brief ready (can be technical or non-technical)
-3. Ask Cline to "initialize memory bank"
+3. Ask Claude to "initialize memory bank"
 
 #### Project Brief Tips
 
 * Can be as detailed or high-level as you like
-* Cline will fill in gaps appropriately
+* Claude will fill in gaps appropriately
 * Focus on what matters most to you
 * Can be updated as project evolves
 
-### 4. Working with Cline
+### 4. Working with Claude
 
 #### Best Practices
 
 * Use Plan mode for strategy discussions
 * Use Act mode for implementation
-* Let .clinerules evolve naturally
-* Trust Cline's learning process
+* Let .clauderules evolve naturally
+* Trust Claude's learning process
 
 #### Key Commands
 
-* "follow your custom instructions" - starting a task, this will instruct Cline to read the context files and continue where he left off
+* "follow your custom instructions" - starting a task, this will instruct Claude to read the context files and continue where he left off
 * "initialize memory bank" - Start fresh
 * "update memory bank" - Full documentation review
 * Toggle Plan/Act modes as needed
@@ -220,14 +220,14 @@ REMEMBER: After every memory reset, I begin completely fresh. The Memory Bank is
 * projectbrief.md is your foundation
 * activeContext.md changes most often
 * progress.md tracks milestones
-* .clinerules captures learning
+* .clauderules captures learning
 
 ### 5. Tips for Success
 
 #### Getting Started
 
 * Start with a basic project brief
-* Let Cline create initial structure
+* Let Claude create initial structure
 * Review and adjust as needed
 
 #### Ongoing Work
@@ -239,9 +239,9 @@ REMEMBER: After every memory reset, I begin completely fresh. The Memory Bank is
 
 #### Project Intelligence
 
-* Let Cline discover patterns
+* Let Claude discover patterns
 * Validate important insights
 * Focus on non-obvious learnings
-* Use .clinerules as a learning tool
+* Use .clauderules as a learning tool
 
-Remember: The memory bank is Cline's only link to previous work. Its effectiveness depends entirely on maintaining clear, accurate documentation and confirming context preservation in every interaction.
+Remember: The memory bank is Claude's only link to previous work. Its effectiveness depends entirely on maintaining clear, accurate documentation and confirming context preservation in every interaction.
